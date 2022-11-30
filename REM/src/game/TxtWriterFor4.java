@@ -24,19 +24,19 @@ public class TxtWriterFor4 {
 			InputStream myInput = new FileInputStream("data4x4.txt");
 			Scanner myInputFile = new Scanner(myInput);
 			
-			List<ArrayList<Integer>> namesAndNumbers = new ArrayList<ArrayList<Integer>>();
+			List<ArrayList<Integer>> ageAndScore = new ArrayList<ArrayList<Integer>>();
 			
-			namesAndNumbers.add(new ArrayList<Integer>(Arrays.asList(age, score)));
+			ageAndScore.add(new ArrayList<Integer>(Arrays.asList(age, score)));
 									
 			while(myInputFile.hasNext())
 			{
 				age = myInputFile.nextInt();
 				score = myInputFile.nextInt();
-				namesAndNumbers.add(new ArrayList<Integer>(Arrays.asList(age, score)));		
+				ageAndScore.add(new ArrayList<Integer>(Arrays.asList(age, score)));		
 			}
 			
 			
-			Collections.sort(namesAndNumbers, new Comparator<ArrayList<Integer>>() {    
+			Collections.sort(ageAndScore, new Comparator<ArrayList<Integer>>() {    
 			        @Override
 			        public int compare(ArrayList<Integer> age1, ArrayList<Integer> age2) {
 			            return age1.get(0).compareTo(age2.get(0));
@@ -49,8 +49,8 @@ public class TxtWriterFor4 {
 			OutputStream myFile = new FileOutputStream("data4x4.txt");
 			PrintStream myOutputFile = new PrintStream(myFile);
 			
-			for(int x = 0; x < namesAndNumbers.size(); x++){
-				myOutputFile.println(namesAndNumbers.get(x).get(0) + " " + namesAndNumbers.get(x).get(1));
+			for(int x = 0; x < ageAndScore.size(); x++){
+				myOutputFile.println(ageAndScore.get(x).get(0) + " " + ageAndScore.get(x).get(1));
 			}
 			
 			
