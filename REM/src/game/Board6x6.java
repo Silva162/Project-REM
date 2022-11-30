@@ -1884,6 +1884,53 @@ public class Board6x6 extends javax.swing.JFrame {
 		};
 		thread.start();
 }
+	
+	try
+	{
+
+		InputStream myInput = new FileInputStream("data4x4.txt");
+		Scanner myInputFile = new Scanner(myInput);
+		
+		List<ArrayList<Integer>> ageAndScore = new ArrayList<ArrayList<Integer>>();
+		
+		ageAndScore.add(new ArrayList<Integer>(Arrays.asList(age, score)));
+								
+		while(myInputFile.hasNext())
+		{
+			age = myInputFile.nextInt();
+			score = myInputFile.nextInt();
+			ageAndScore.add(new ArrayList<Integer>(Arrays.asList(age, score)));		
+		}
+		
+		
+		Collections.sort(ageAndScore, new Comparator<ArrayList<Integer>>() {    
+		        @Override
+		        public int compare(ArrayList<Integer> age1, ArrayList<Integer> age2) {
+		            return age1.get(0).compareTo(age2.get(0));
+		        }               
+		});
+		
+		myInputFile.close();
+		 
+		
+		OutputStream myFile = new FileOutputStream("data4x4.txt");
+		PrintStream myOutputFile = new PrintStream(myFile);
+		
+		for(int x = 0; x < ageAndScore.size(); x++){
+			myOutputFile.println(ageAndScore.get(x).get(0) + " " + ageAndScore.get(x).get(1));
+		}
+		
+		
+		myFile.close();
+	}
+	
+	catch (Exception E)
+	{
+		System.out.println("Cannot save data for 4x4 game to txt");
+	}
+	
+}
+	
 // ===============================================================================================
 
 // Variables declaration - do not modify//GEN-BEGIN:variables
