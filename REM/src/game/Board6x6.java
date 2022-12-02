@@ -1885,6 +1885,11 @@ public class Board6x6 extends javax.swing.JFrame {
 		thread.start();
 }
 	
+private void textWriter(int sc, int ag) {
+	
+	int age = ag;
+	int score = sc;
+	
 	try
 	{
 
