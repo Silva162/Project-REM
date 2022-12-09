@@ -1,14 +1,26 @@
 package game;
 
-import java.lang.System.Logger;
-import java.lang.System.Logger.Level;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Scanner;
 
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class Board6x6 extends javax.swing.JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	// Creates new form Board6x6
 	public Board6x6() {
 		initComponents();
@@ -1364,6 +1376,24 @@ public class Board6x6 extends javax.swing.JFrame {
 		// so to read from it, just pass type to this ArrayList to get the right
 		// icon/shape.
 		ArrayList<ImageIcon> shapes = new ArrayList();
+			shapes.add(BElevator);
+			shapes.add(BRect);
+			shapes.add(Circle);
+			shapes.add(Dice);
+			shapes.add(Doodle);
+			shapes.add(HalfPipe);
+			shapes.add(Smiley);
+			shapes.add(Metroid);
+			shapes.add(Vertical);
+			shapes.add(WElevator);
+			shapes.add(Blink);
+			shapes.add(Crosshair);
+			shapes.add(Diagonal);
+			shapes.add(Halo);
+			shapes.add(Horizontal);
+			shapes.add(Lambda);
+			shapes.add(Plankton);
+			shapes.add(Portal);
 		/* Add shape names here 
 		 * format should be:
 		 * shapes.add(shapename);
@@ -1558,13 +1588,13 @@ public class Board6x6 extends javax.swing.JFrame {
 						"                        Congratulations!        \n"
 								+ "You finished the game successfully with " + accuracy + "% accuracy, \n"
 								+ "And a final score of " + score + "!\n",
-						"You Win!", WIDTH, WIN);
+						"You Win!", WIDTH, Win);
 			} else {
 				JOptionPane.showMessageDialog(rootPane,
 						"                               Nice Try!\n" + "you finished the game with " + accuracy
 								+ "% accuracy.\n" + "However your score is " + score + ".\n"
 								+ "You need a score greater than 0 to win.  Try again!",
-						"You Lose!", WIDTH, LOSS);
+						"You Lose!", WIDTH, Lose);
 			}
 		}
 	}
@@ -1992,6 +2022,27 @@ private javax.swing.JButton startGameButton;
 Controller Controller = new Controller();
 
 ImageIcon Blank = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/blank.png"));
+ImageIcon BElevator = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/blackelevator.png"));
+ImageIcon Blink = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/blink.png"));
+ImageIcon BRect = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/brownrect.png"));
+ImageIcon Circle = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/circle.png"));
+ImageIcon Crosshair = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/crosshair.png"));
+ImageIcon Diagonal = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/diagonal.png"));
+ImageIcon Dice = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/dice.png"));
+ImageIcon Doodle = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/doodle.png"));
+ImageIcon HalfPipe = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/halfpipe.png"));
+ImageIcon Halo = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/halo.png"));
+ImageIcon Horizontal = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/horizontal.png"));
+ImageIcon Lambda = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/lambda.png"));
+ImageIcon Metroid = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/metroid.png"));
+ImageIcon Plankton = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/plankton.png"));
+ImageIcon Portal = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/portal.png"));
+ImageIcon Vertical = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/vertical.png"));
+ImageIcon WElevator = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/whiteelevator.png"));
+ImageIcon Smiley = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/smiley.png"));
+ImageIcon Win = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/win.png"));
+ImageIcon Lose = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/lose.png"));
+
 /* add the other shapes here - Ray */
 
 int count = 0; // 1 for first tile flipped, 2 for second. if 2, check match.

@@ -8,27 +8,27 @@ public class Controller {
     
     //these hold the positions (ID) of each of the shapes and their pair.
     //this ID is handed out from initShuffleTiles() randomCollection array.
-    int circle1, circle2;
-    int cross1, cross2;
-    int diamond1, diamond2;
-    int dice1 , dice2;
-    int donut1, donut2;
-    int eclipse1, eclipse2;
-    int eclipse3, eclipse4;
-    int grapes1, grapes2;
-    int heart1, heart2;
-    int L1, L2;
-    int rectangle1, rectangle2;
-    int snowflake1, snowflake2;
-    int sqdonut1, sqdonut2;
-    int square1, square2;
-    int star1, star2;
-    int tear1, tear2;
-    int triangle1, triangle2;
-    int X1, X2;
+    int BRect1, BRect2;
+    int Circle1, Circle2;
+    int Doodle1, Doodle2;
+    int Dice1 , Dice2;
+    int HalfPipe1, HalfPipe2;
+    int Metroid1, Metroid2;
+    int VerticaCrosshair1, VerticaCrosshair2;
+    int WElevator1, WElevator2;
+    int Blink1, Blink2;
+    int Crosshair1, Crosshair2;
+    int Diagonal1, Diagonal2;
+    int Halo1, Halo2;
+    int Horizontal1, Horizontal2;
+    int Lambda1, Lambda2;
+    int Plankton1, Plankton2;
+    int Portal1, Portal2;
+    int BElevator1, BElevator2;
+    int Smiley1, Smiley2;
     
     //========================================================================================
-    //          4X4 GAME BOARD TILE CONTROL
+    //          4Smiley4 GAME BOARD TILE CONTROL
     //========================================================================================
     
     //generate random numbers & assign them to each shape twice.  its their location on the game board.
@@ -43,37 +43,37 @@ public class Controller {
         Collections.shuffle(randomCollection);
 
         //assign each shape their locations
-        circle1 = randomCollection.get(n);
+        BRect1 = randomCollection.get(n);
         n++;
-        circle2 = randomCollection.get(n);
+        BRect2 = randomCollection.get(n);
         n++;
-        cross1 = randomCollection.get(n);
+        Circle1 = randomCollection.get(n);
         n++;       
-        cross2 = randomCollection.get(n);
+        Circle2 = randomCollection.get(n);
         n++   ;   
-        diamond1 = randomCollection.get(n);
+        Doodle1 = randomCollection.get(n);
         n++;
-        diamond2 = randomCollection.get(n);
+        Doodle2 = randomCollection.get(n);
         n++; 
-        donut1 = randomCollection.get(n);
+        HalfPipe1 = randomCollection.get(n);
         n++;
-        donut2 = randomCollection.get(n);
+        HalfPipe2 = randomCollection.get(n);
         n++;
-        eclipse1 = randomCollection.get(n);
+        Metroid1 = randomCollection.get(n);
         n++;
-        eclipse2 = randomCollection.get(n);
+        Metroid2 = randomCollection.get(n);
         n++; 
-        square1 = randomCollection.get(n);
+        Lambda1 = randomCollection.get(n);
         n++;
-        square2 = randomCollection.get(n);
+        Lambda2 = randomCollection.get(n);
         n++;
-        star1 = randomCollection.get(n);
+        Plankton1 = randomCollection.get(n);
         n++;
-        star2 = randomCollection.get(n);
+        Plankton2 = randomCollection.get(n);
         n++;
-        X1 = randomCollection.get(n);
+        Smiley1 = randomCollection.get(n);
         n++;
-        X2 = randomCollection.get(n);
+        Smiley2 = randomCollection.get(n);
         n++; 
     }
     
@@ -83,44 +83,44 @@ public class Controller {
         int type = 100;
         
         System.out.print("Shape_Code: ");
-        if (ID == circle1 || ID == circle2){
+        if (ID == BRect1 || ID == BRect2){
             type = 0;
+            System.out.print(type + " - BRect");
+        }
+        else if (ID == Circle1 || ID == Circle2){
+            type = 1;
             System.out.print(type + " - Circle");
         }
-        else if (ID == cross1 || ID == cross2){
-            type = 1;
-            System.out.print(type + " - Cross");
-        }
-        else if (ID == diamond1 || ID == diamond2){
+        else if (ID == Doodle1 || ID == Doodle2){
             type = 2;
-            System.out.print(type + " - Diamond");
+            System.out.print(type + " - Doodle");
         }
-        else if (ID == donut1 || ID == donut2){
+        else if (ID == HalfPipe1 || ID == HalfPipe2){
             type = 3;
-            System.out.print(type + " - Donut");
+            System.out.print(type + " - HalfPipe");
         }
-        else if (ID == eclipse1 || ID == eclipse2){
+        else if (ID == Metroid1 || ID == Metroid2){
             type = 4;
-            System.out.print(type + " - Eclipse");
+            System.out.print(type + " - Metroid");
         }
-        else if (ID == square1 || ID == square2){
+        else if (ID == Lambda1 || ID == Lambda2){
             type = 5;
-            System.out.print(type + " - Square");      
+            System.out.print(type + " - Lambda");      
         }
-        else if (ID == star1 || ID == star2){
+        else if (ID == Plankton1 || ID == Plankton2){
             type = 6;
-            System.out.print(type + " - Star");
+            System.out.print(type + " - Plankton");
         }
-        else if (ID == X1 || ID == X2){
+        else if (ID == Smiley1 || ID == Smiley2){
             type = 7;
-            System.out.print(type + " - X");
+            System.out.print(type + " - Smiley");
         }
         System.out.println();
         
         return type;
     }
     //========================================================================================
-    //          6X6 GAME BOARD TILE CONTROL
+    //          6x6 GAME BOARD TILE CONTROL
     //========================================================================================
    
     //generate random numbers & assign them to each shape twice.  its their location on the game board.
@@ -135,77 +135,77 @@ public class Controller {
         }
         Collections.shuffle(randomCollection);
 
-        circle1 = randomCollection.get(n);
+        BRect1 = randomCollection.get(n);
         n++;
-        circle2 = randomCollection.get(n);
+        BRect2 = randomCollection.get(n);
         n++;
-        cross1 = randomCollection.get(n);
+        Circle1 = randomCollection.get(n);
         n++;       
-        cross2 = randomCollection.get(n);
+        Circle2 = randomCollection.get(n);
         n++   ;   
-        diamond1 = randomCollection.get(n);
+        Doodle1 = randomCollection.get(n);
         n++;
-        diamond2 = randomCollection.get(n);
+        Doodle2 = randomCollection.get(n);
         n++;
-        dice1 = randomCollection.get(n);
+        Dice1 = randomCollection.get(n);
         n++;
-        dice2 = randomCollection.get(n);
+        Dice2 = randomCollection.get(n);
         n++;
-        donut1 = randomCollection.get(n);
+        HalfPipe1 = randomCollection.get(n);
         n++;
-        donut2 = randomCollection.get(n);
+        HalfPipe2 = randomCollection.get(n);
         n++;
-        eclipse1 = randomCollection.get(n);
+        Metroid1 = randomCollection.get(n);
         n++;
-        eclipse2 = randomCollection.get(n);
+        Metroid2 = randomCollection.get(n);
         n++;
-        eclipse3 = randomCollection.get(n);
+        VerticaCrosshair1 = randomCollection.get(n);
         n++;
-        eclipse4 = randomCollection.get(n);
+        VerticaCrosshair2 = randomCollection.get(n);
         n++;
-        grapes1 = randomCollection.get(n);
+        WElevator1 = randomCollection.get(n);
         n++;
-        grapes2 = randomCollection.get(n);
+        WElevator2 = randomCollection.get(n);
         n++;
-        heart1 = randomCollection.get(n);
+        Blink1 = randomCollection.get(n);
         n++;
-        heart2 = randomCollection.get(n);
+        Blink2 = randomCollection.get(n);
         n++;
-        L1 = randomCollection.get(n);
+        Crosshair1 = randomCollection.get(n);
         n++;
-        L2 = randomCollection.get(n);
+        Crosshair2 = randomCollection.get(n);
         n++;
-        rectangle1 = randomCollection.get(n);
+        Diagonal1 = randomCollection.get(n);
         n++;
-        rectangle2 = randomCollection.get(n);
+        Diagonal2 = randomCollection.get(n);
         n++;
-        snowflake1 = randomCollection.get(n);
+        Halo1 = randomCollection.get(n);
         n++;
-        snowflake2 = randomCollection.get(n);
+        Halo2 = randomCollection.get(n);
         n++;
-        sqdonut1 = randomCollection.get(n);
+        Horizontal1 = randomCollection.get(n);
         n++;
-        sqdonut2 = randomCollection.get(n);
+        Horizontal2 = randomCollection.get(n);
         n++;
-        square1 = randomCollection.get(n);
+        Lambda1 = randomCollection.get(n);
         n++;
-        square2 = randomCollection.get(n);
+        Lambda2 = randomCollection.get(n);
         n++;
-        star1 = randomCollection.get(n);
+        Plankton1 = randomCollection.get(n);
         n++;
-        star2 = randomCollection.get(n);
+        Plankton2 = randomCollection.get(n);
         n++;
-        tear1 = randomCollection.get(n);
+        Portal1 = randomCollection.get(n);
         n++;
-        tear2 = randomCollection.get(n);
+        Portal2 = randomCollection.get(n);
         n++;
-        triangle1 = randomCollection.get(n);
+        BElevator1 = randomCollection.get(n);
         n++;
-        triangle2 = randomCollection.get(n);
+        BElevator2 = randomCollection.get(n);
         n++;
-        X1 = randomCollection.get(n);
+        Smiley1 = randomCollection.get(n);
         n++;
-        X2 = randomCollection.get(n);
+        Smiley2 = randomCollection.get(n);
         n++; 
     }
     
@@ -215,77 +215,77 @@ public class Controller {
         int type = 100;
         
         System.out.print("Shape_Code: ");
-        if (ID == circle1 || ID == circle2){
+        if (ID == BRect1 || ID == BRect2){
             type = 0;
+            System.out.print(type + " - BRect");
+        }
+        else if (ID == Circle1 || ID == Circle2){
+            type = 1;
             System.out.print(type + " - Circle");
         }
-        else if (ID == cross1 || ID == cross2){
-            type = 1;
-            System.out.print(type + " - Cross");
-        }
-        else if (ID == diamond1 || ID == diamond2){
+        else if (ID == Doodle1 || ID == Doodle2){
             type = 2;
-            System.out.print(type + " - Diamond");
+            System.out.print(type + " - Doodle");
         }
-        else if (ID == dice1 || ID == dice2){
+        else if (ID == Dice1 || ID == Dice2){
             type = 3;
             System.out.print(type + " - Dice");
         }
-        else if (ID == donut1 || ID == donut2){
+        else if (ID == HalfPipe1 || ID == HalfPipe2){
             type = 4;
-            System.out.print(type + " - Donut");
+            System.out.print(type + " - HalfPipe");
         }
-        else if (ID == eclipse1 || ID == eclipse2){
+        else if (ID == Metroid1 || ID == Metroid2){
             type = 5;
-            System.out.print(type + " - Eclipse");
+            System.out.print(type + " - Metroid");
         }
-        else if (ID == eclipse3 || ID == eclipse4){
+        else if (ID == VerticaCrosshair1 || ID == VerticaCrosshair2){
             type = 6;
-            System.out.print(type + " - Eclipse2");
+            System.out.print(type + " - Vertical");
         }
-        else if (ID == grapes1 || ID == grapes2){
+        else if (ID == WElevator1 || ID == WElevator2){
             type = 7;
-            System.out.print(type + " - Grapes");
+            System.out.print(type + " - WElevator");
         }
-        else if (ID == heart1 || ID == heart2){
+        else if (ID == Blink1 || ID == Blink2){
             type = 8;
-            System.out.print(type + " - Heart");
+            System.out.print(type + " - Blink");
         }
-        else if (ID == L1 || ID == L2){
+        else if (ID == Crosshair1 || ID == Crosshair2){
             type = 9;
-            System.out.print(type + " - L");
+            System.out.print(type + " - Crosshair");
         }
-        else if (ID == rectangle1 || ID == rectangle2){
+        else if (ID == Diagonal1 || ID == Diagonal2){
             type = 10;
-            System.out.print(type + " - Rectangle");
+            System.out.print(type + " - Diagonal");
         }
-        else if (ID == snowflake1 || ID == snowflake2){
+        else if (ID == Halo1 || ID == Halo2){
             type = 11;
-            System.out.print(type + " - Snowflake");
+            System.out.print(type + " - Halo");
         }
-        else if (ID == sqdonut1 || ID == sqdonut2){
+        else if (ID == Horizontal1 || ID == Horizontal2){
             type = 12;
-            System.out.print(type + " - SquareDonut");
+            System.out.print(type + " - LambdaHalfPipe");
         }
-        else if (ID == square1 || ID == square2){
+        else if (ID == Lambda1 || ID == Lambda2){
             type = 13;
-            System.out.print(type + " - Square");      
+            System.out.print(type + " - Lambda");      
         }
-        else if (ID == star1 || ID == star2){
+        else if (ID == Plankton1 || ID == Plankton2){
             type = 14;
-            System.out.print(type + " - Star");
+            System.out.print(type + " - Plankton");
         }
-        else if (ID == tear1 || ID == tear2){
+        else if (ID == Portal1 || ID == Portal2){
             type = 15;
-            System.out.print(type + " - Tear");
+            System.out.print(type + " - Portal");
         }
-        else if (ID == triangle1 || ID == triangle2){
+        else if (ID == BElevator1 || ID == BElevator2){
             type = 16;
-            System.out.print(type + " - Triangle");
+            System.out.print(type + " - BElevator");
         }       
-        else if (ID == X1 || ID == X2){
+        else if (ID == Smiley1 || ID == Smiley2){
             type = 17;
-            System.out.print(type + " - X");
+            System.out.print(type + " - Smiley");
         }
         System.out.println();
         
