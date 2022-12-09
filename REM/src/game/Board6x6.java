@@ -2021,27 +2021,27 @@ private javax.swing.JButton startGameButton;
 // GLOBALS
 Controller Controller = new Controller();
 
-ImageIcon Blank = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/blank.png"));
-ImageIcon BElevator = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/blackelevator.png"));
-ImageIcon Blink = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/blink.png"));
-ImageIcon BRect = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/brownrect.png"));
-ImageIcon Circle = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/circle.png"));
-ImageIcon Crosshair = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/crosshair.png"));
-ImageIcon Diagonal = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/diagonal.png"));
-ImageIcon Dice = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/dice.png"));
-ImageIcon Doodle = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/doodle.png"));
-ImageIcon HalfPipe = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/halfpipe.png"));
-ImageIcon Halo = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/halo.png"));
-ImageIcon Horizontal = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/horizontal.png"));
-ImageIcon Lambda = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/lambda.png"));
-ImageIcon Metroid = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/metroid.png"));
-ImageIcon Plankton = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/plankton.png"));
-ImageIcon Portal = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/portal.png"));
-ImageIcon Vertical = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/vertical.png"));
-ImageIcon WElevator = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/whiteelevator.png"));
-ImageIcon Smiley = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/smiley.png"));
-ImageIcon Win = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/win.png"));
-ImageIcon Lose = new javax.swing.ImageIcon(getClass().getResource("/src/sprites/lose.png"));
+ImageIcon Blank = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/blank.png"));
+ImageIcon BElevator = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/blackelevator.png"));
+ImageIcon Blink = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/blink.png"));
+ImageIcon BRect = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/brownrect.png"));
+ImageIcon Circle = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/circle.png"));
+ImageIcon Crosshair = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/crosshair.png"));
+ImageIcon Diagonal = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/diagonal.png"));
+ImageIcon Dice = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/dice.png"));
+ImageIcon Doodle = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/doodle.png"));
+ImageIcon HalfPipe = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/halfpipe.png"));
+ImageIcon Halo = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/halo.png"));
+ImageIcon Horizontal = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/horizontal.png"));
+ImageIcon Lambda = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/lambda.png"));
+ImageIcon Metroid = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/metroid.png"));
+ImageIcon Plankton = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/plankton.png"));
+ImageIcon Portal = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/portal.png"));
+ImageIcon Vertical = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/vertical.png"));
+ImageIcon WElevator = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/whiteelevator.png"));
+ImageIcon Smiley = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/smiley.png"));
+ImageIcon Win = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/win.png"));
+ImageIcon Lose = new javax.swing.ImageIcon(getClass().getResource("/game/sprites/lose.png"));
 
 /* add the other shapes here - Ray */
 

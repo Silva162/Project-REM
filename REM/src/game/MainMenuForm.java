@@ -27,7 +27,8 @@ public class MainMenuForm extends javax.swing.JFrame {
         setTitle("Welcome to MemoryTiles");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        MainMenuLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/memorygame/TitleScreen.png"))); // NOI18N
+        /*Main Menu Logo*
+        //MainMenuLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/game/sprites/TitleScreen.png"))); 
 
         /*Start 4x4
         Start4x4Button.setText("Start 4x4 Game");
