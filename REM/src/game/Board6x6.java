@@ -845,6 +845,8 @@ public class Board6x6 extends javax.swing.JFrame {
 
 		// Set the icons to be Blank.
 		wipeBoard();
+		
+		int playerAge  = JOptionPane.showInputDialog("Enter age: ");
 
 		// generate random #'s and assign them to shapes as IDs.
 		Controller.initShuffle6x6Tiles();
