@@ -799,6 +799,7 @@ public class Board6x6 extends javax.swing.JFrame {
 		match = false;
 		count = 0;
 		score = 0;
+		age = 0;
 		accuracy = 0;
 		correctPairs = 0;
 		totalPairs = 0;
@@ -848,7 +849,7 @@ public class Board6x6 extends javax.swing.JFrame {
 		
 		
 		// ask for player age
-		int playerAge  = JOptionPane.showInputDialog("Enter age: ");
+		age  = JOptionPane.showInputDialog("Enter age: ");
 
 		// generate random #'s and assign them to shapes as IDs.
 		Controller.initShuffle6x6Tiles();
@@ -1600,6 +1601,7 @@ public class Board6x6 extends javax.swing.JFrame {
 								+ "You need a score greater than 0 to win.  Try again!",
 						"You Lose!", WIDTH, Lose);
 			}
+			textWriter();
 		}
 	}
 
@@ -1919,10 +1921,7 @@ public class Board6x6 extends javax.swing.JFrame {
 		thread.start();
 }
 	
-private void textWriter(int sc, int ag) {
-	
-	int age = ag;
-	int score = sc;
+private void textWriter() {
 	
 	try
 	{
@@ -2055,6 +2054,7 @@ int ID_Guess1 = 100, ID_Guess2 = 100; // the locations of the 2 tiles the user g
 int type_Guess1, type_Guess2; // the ShapeCodes for the 2 guesses. used for testing a match.
 boolean match; // catches the result from testMatch sub.
 int score; // saves the player's score
+int age; //saves player age
 String sScore; // to be sent to the label.
 int PrevID_Guess1; // these 2 are used to store the 2 tiles from the LAST matching, to know which
 					// (locations) to
