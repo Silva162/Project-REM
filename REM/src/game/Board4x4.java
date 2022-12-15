@@ -1067,7 +1067,7 @@ public class Board4x4 extends javax.swing.JFrame {
     int type_Guess1, type_Guess2;               //the ShapeCodes for the 2 guesses.  used for testing a match. 
     boolean match;                              //catches the result from testMatch sub.
     int score;                                  //saves the player's score
-    string sScore;                              //to be sent to the label.
+    String sScore;                              //to be sent to the label.
     int age;
     int PrevID_Guess1;                          //these 2 are used to store the 2 tiles from the LAST matching, to know which (locations) to 
     int PrevID_Guess2;                          //return to blanks when a new matching has started.
