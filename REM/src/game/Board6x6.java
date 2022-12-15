@@ -1922,7 +1922,7 @@ private void textWriter(int sc, int ag) {
 	try
 	{
 
-		InputStream myInput = new FileInputStream("data4x4.txt");
+		InputStream myInput = new FileInputStream("data6x6.txt");
 		Scanner myInputFile = new Scanner(myInput);
 		
 		List<ArrayList<Integer>> ageAndScore = new ArrayList<ArrayList<Integer>>();
