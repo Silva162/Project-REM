@@ -2047,7 +2047,7 @@ int ID_Guess1 = 100, ID_Guess2 = 100; // the locations of the 2 tiles the user g
 int type_Guess1, type_Guess2; // the ShapeCodes for the 2 guesses. used for testing a match.
 boolean match; // catches the result from testMatch sub.
 int score; // saves the player's score
-string sScore; // to be sent to the label.
+String sScore; // to be sent to the label.
 int age;
 int PrevID_Guess1; // these 2 are used to store the 2 tiles from the LAST matching, to know which
 					// (locations) to
