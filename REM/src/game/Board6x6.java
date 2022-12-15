@@ -843,6 +843,8 @@ public class Board6x6 extends javax.swing.JFrame {
 
 		// Set the icons to be Blank.
 		wipeBoard();
+		
+        age  = JOptionPane.showInputDialog("Enter age: ");
 
 		// generate random #'s and assign them to shapes as IDs.
 		Controller.initShuffle6x6Tiles();
@@ -1593,6 +1595,7 @@ public class Board6x6 extends javax.swing.JFrame {
 								+ "You need a score greater than 0 to win.  Try again!",
 						"You Lose!", WIDTH, Lose);
 			}
+            textWriter();
 		}
 	}
 
@@ -2048,6 +2051,7 @@ int type_Guess1, type_Guess2; // the ShapeCodes for the 2 guesses. used for test
 boolean match; // catches the result from testMatch sub.
 int score; // saves the player's score
 String sScore; // to be sent to the label.
+int age;
 int PrevID_Guess1; // these 2 are used to store the 2 tiles from the LAST matching, to know which
 					// (locations) to
 int PrevID_Guess2; // return to blanks when a new matching has started.

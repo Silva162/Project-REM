@@ -389,6 +389,8 @@ public class Board4x4 extends javax.swing.JFrame {
         //Set the icons to be Blank.
         wipeBoard();
         
+        age  = JOptionPane.showInputDialog("Enter age: ");
+        
         //generate random #'s and assign them to shapes as IDs.
         Controller.initShuffle4x4Tiles();
         for (int i = 0; i<= 15; i++){
@@ -871,6 +873,7 @@ public class Board4x4 extends javax.swing.JFrame {
                 "You Lose!", 
                 WIDTH, Lose);
             }
+            textWriter();
         }
     }
     
@@ -966,10 +969,7 @@ public class Board4x4 extends javax.swing.JFrame {
         thread.start(); 
     }
     
-    private void textWriter(int sc, int ag) {
-    	
-    	int age = ag;
-    	int score = sc;
+    private void textWriter() {
     	
     	try
     	{
@@ -1068,6 +1068,7 @@ public class Board4x4 extends javax.swing.JFrame {
     boolean match;                              //catches the result from testMatch sub.
     int score;                                  //saves the player's score
     String sScore;                              //to be sent to the label.
+    int age;
     int PrevID_Guess1;                          //these 2 are used to store the 2 tiles from the LAST matching, to know which (locations) to 
     int PrevID_Guess2;                          //return to blanks when a new matching has started.
     double totalPairs;                          //Keeps track of how many pairs happened. used to calculate accuracy %.
